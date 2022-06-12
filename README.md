@@ -19,10 +19,6 @@ For this analysis, we will use Pandas to change the "tripduration" column from a
 - Show the number of bike trips for all riders and genders for each hour of each day of the week.
 - Show the number of bike trips for each type of user and gender for each day of the week.
 
-Deliverable 1: Change Trip Duration to a Datetime Format
-Deliverable 2: Create Visualizations for the Trip Analysis
-Deliverable 3: Create a Story and Report for the Final Presentation
-
 
 [:top: Go To Top](#index)
 
@@ -47,10 +43,50 @@ Since file size is bigger that permitted is not available inside the github
 
 - [Citibike Datasource](https://ride.citibikenyc.com/system-data)
 
+### **Challenge Execution**
+
+- **Deliverable 1**: Change Trip Duration to a Datetime Format
+
+After creating the DataFrame, we were able to change the format, using the following code:
+
+```
+bike_trip_df["tripduration"] = pd.to_datetime(bike_trip_df["tripduration"], unit = 's')
+bike_trip_df.head()
+
+```
+
+- **Deliverable 2**: Create Visualizations for the Trip Analysis
+
+With the use of the tripduration we were able to crete different visualizations as the following image
+
+> Fig 1: Checkout Times
+
+![Checkout Times](https://github.com/amonjaras/bikesharing/blob/main/Resources/Images/checkout.png)
+
+- **Deliverable 3**: Create a Story and Report for the Final Presentation
+
+Refer to the Citibike Challenge to access the information.
 
 [:top: Go To Top](#index)
 
 
+## **Summary**
+
+The NYC Citibike anlalysis shows a viable business opportunity for Des Moines.
+
+Bike sharing services are in high demand, specially during the summer. Bike riding is an affordable way of transportation to travel to the workplace and enjoy the weekends.
+
+We can highlight to factors:
+
+- Majority of users are men
+- Majority of users are long term subscribers.
+
+There is an opportunity to promote:
+
+- the use of bikes for female users.
+- the use of bikes for families.
+
+[:top: Go To Top](#index)
 
 This work belongs to [^1].
 Course [^2].
